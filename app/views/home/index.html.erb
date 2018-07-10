@@ -1,2 +1,16 @@
-<h1>Home#index</h1>
-<p>Find me in app/views/home/index.html.erb</p>
+<div id='hello'>
+  <p> {{ message }} </p>
+</div>
+<div class='container'>
+  <div class='row'>
+    <%- @books.each do |book| %>
+      <div class='col s4 m6'>
+        <div class='card'>
+          <%= book.title %>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>
+
+
